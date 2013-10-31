@@ -1,7 +1,7 @@
 Summary:	KDE Remote Desktop Client
 Name:		krdc
 Version:	4.11.2
-Release:	1
+Release:	2
 Epoch:		3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -17,10 +17,8 @@ Patch0:		krdc-4.11.0-desktop.patch
 BuildRequires:	kdelibs4-devel
 BuildRequires:	pkgconfig(libvncserver)
 BuildRequires:	pkgconfig(TelepathyQt4)
-# freerdp is not in Main
-#BuildRequires:	pkgconfig(freerdp)
-#BuildRequires:	freerdp
-#Requires:	freerdp
+BuildRequires:	freerdp
+Requires:	freerdp
 Conflicts:	kde4-filesharing < 3:4.8.0
 
 %description
@@ -103,6 +101,9 @@ based on KRDC.
 %makeinstall_std -C build
 
 %changelog
+* Thu Oct 31 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 3:4.11.2-2
+- Add freerdp to BuildRequires and Requires
+
 * Wed Oct 02 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 3:4.11.2-1
 - New version 4.11.2
 
