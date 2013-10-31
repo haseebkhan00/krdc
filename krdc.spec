@@ -17,8 +17,8 @@ Patch0:		krdc-4.11.0-desktop.patch
 BuildRequires:	kdelibs4-devel
 BuildRequires:	pkgconfig(libvncserver)
 BuildRequires:	pkgconfig(TelepathyQt4)
-BuildRequires:	freerdp
-Requires:	freerdp
+BuildRequires:	freerdp >= 1.0.2
+Requires:	freerdp >= 1.0.2
 Conflicts:	kde4-filesharing < 3:4.8.0
 
 %description
