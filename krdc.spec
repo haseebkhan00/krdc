@@ -1,7 +1,7 @@
 Summary:	KDE Remote Desktop Client
 Name:		krdc
-Version:	4.11.2
-Release:	2
+Version:	4.11.3
+Release:	1
 Epoch:		3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -101,6 +101,9 @@ based on KRDC.
 %makeinstall_std -C build
 
 %changelog
+* Wed Nov 06 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 3:4.11.3-1
+- New version 4.11.3
+
 * Thu Oct 31 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 3:4.11.2-2
 - Add freerdp to BuildRequires and Requires
 
