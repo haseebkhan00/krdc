@@ -27,28 +27,28 @@ or even control the desktop session on another machine that is running a
 compatible server. VNC and RDP are supported.
 
 %files
-%{_kde_bindir}/krdc
-%{_kde_appsdir}/krdc
-%{_kde_applicationsdir}/krdc.desktop
-%{_kde_datadir}/config.kcfg/krdc.kcfg
-%{_kde_libdir}/kde4/kcm_krdc_rdpplugin.so
-%{_kde_libdir}/kde4/kcm_krdc_vncplugin.so
-%{_kde_libdir}/kde4/krdc_rdpplugin.so
-%{_kde_libdir}/kde4/krdc_testplugin.so
-%{_kde_libdir}/kde4/krdc_vncplugin.so
-%{_kde_services}/rdp.protocol
-%{_kde_services}/vnc.protocol
-%{_kde_services}/krdc_rdp.desktop
-%{_kde_services}/krdc_rdp_config.desktop
-%{_kde_services}/krdc_test.desktop
-%{_kde_services}/krdc_vnc.desktop
-%{_kde_services}/krdc_vnc_config.desktop
-%{_kde_services}/ServiceMenus/smb2rdc.desktop
-%{_kde_servicetypes}/krdc_plugin.desktop
-%{_kde_docdir}/HTML/*/krdc
+%{_bindir}/krdc
+%{_datadir}/apps/krdc
+%{_datadir}/applications/kde4/krdc.desktop
+%{_datadir}/config.kcfg/krdc.kcfg
+%{_libdir}/kde4/kcm_krdc_rdpplugin.so
+%{_libdir}/kde4/kcm_krdc_vncplugin.so
+%{_libdir}/kde4/krdc_rdpplugin.so
+%{_libdir}/kde4/krdc_testplugin.so
+%{_libdir}/kde4/krdc_vncplugin.so
+%{_datadir}/kde4/services/rdp.protocol
+%{_datadir}/kde4/services/vnc.protocol
+%{_datadir}/kde4/services/krdc_rdp.desktop
+%{_datadir}/kde4/services/krdc_rdp_config.desktop
+%{_datadir}/kde4/services/krdc_test.desktop
+%{_datadir}/kde4/services/krdc_vnc.desktop
+%{_datadir}/kde4/services/krdc_vnc_config.desktop
+%{_datadir}/kde4/services/ServiceMenus/smb2rdc.desktop
+%{_datadir}/kde4/servicetypes/krdc_plugin.desktop
+%doc %{_docdir}/HTML/*/krdc
 #### Telepathy-Qt4-based optional feature ####
-%{_kde_bindir}/krdc_rfb_approver
-%{_kde_appsdir}/krdc_rfb_approver
+%{_bindir}/krdc_rfb_approver
+%{_datadir}/apps/krdc_rfb_approver
 %{_datadir}/dbus-1/services/org.freedesktop.Telepathy.Client.krdc_rfb*.service
 %{_datadir}/telepathy/clients/krdc_rfb*.client
 
@@ -66,7 +66,7 @@ Obsoletes:	%{_lib}krdccore1 < 3:4.10.1
 Shared library for KRDC.
 
 %files -n %{libkrdccore}
-%{_kde_libdir}/libkrdccore.so.%{krdccore_major}*
+%{_libdir}/libkrdccore.so.%{krdccore_major}*
 
 #----------------------------------------------------------------------------
 
@@ -84,8 +84,8 @@ This package contains header files needed if you want to build applications
 based on KRDC.
 
 %files -n %{devkrdccore}
-%{_kde_includedir}/krdc
-%{_kde_libdir}/libkrdccore.so
+%{_includedir}/krdc
+%{_libdir}/libkrdccore.so
 
 #----------------------------------------------------------------------------
 
