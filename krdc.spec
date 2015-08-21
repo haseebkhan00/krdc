@@ -1,7 +1,7 @@
 Summary:	KDE Remote Desktop Client
 Name:		krdc
-Version:	15.04.3
-Release:	2
+Version:	15.08.0
+Release:	1
 Epoch:		3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -94,7 +94,8 @@ based on KRDC.
 %patch0 -p1
 
 %build
-%cmake_kde4
+%cmake_kde4 \
+	-DCMAKE_MINIMUM_REQUIRED_VERSION=3.1
 %make
 
 %install
