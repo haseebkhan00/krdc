@@ -1,7 +1,7 @@
 Summary:	KDE Remote Desktop Client
 Name:		krdc
-Version:	15.12.3
-Release:	2
+Version:	16.04.0
+Release:	1
 Epoch:		3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -28,33 +28,21 @@ compatible server. VNC and RDP are supported.
 
 %files
 %{_bindir}/krdc
-%{_datadir}/apps/krdc
-%{_datadir}/applications/kde4/krdc.desktop
+%{_datadir}/applications/org.kde.krdc.desktop
 %{_datadir}/config.kcfg/krdc.kcfg
-%{_libdir}/kde4/kcm_krdc_rdpplugin.so
-%{_libdir}/kde4/kcm_krdc_vncplugin.so
-%{_libdir}/kde4/krdc_rdpplugin.so
-%{_libdir}/kde4/krdc_testplugin.so
-%{_libdir}/kde4/krdc_vncplugin.so
-%{_datadir}/kde4/services/rdp.protocol
-%{_datadir}/kde4/services/vnc.protocol
-%{_datadir}/kde4/services/krdc_rdp.desktop
-%{_datadir}/kde4/services/krdc_rdp_config.desktop
-%{_datadir}/kde4/services/krdc_test.desktop
-%{_datadir}/kde4/services/krdc_vnc.desktop
-%{_datadir}/kde4/services/krdc_vnc_config.desktop
-%{_datadir}/kde4/services/ServiceMenus/smb2rdc.desktop
-%{_datadir}/kde4/servicetypes/krdc_plugin.desktop
+%{_datadir}/krdc
+%{_datadir}/kservices5/ServiceMenus/smb2rdc.desktop
+%{_datadir}/kservices5/krdc_rdp_config.desktop
+%{_datadir}/kservices5/krdc_vnc_config.desktop
+%{_datadir}/kservices5/rdp.protocol
+%{_datadir}/kservices5/vnc.protocol
+%{_libdir}/plugins/krdc
+%{_datadir}/kxmlgui5/krdc/krdcui.rc
 %doc %{_docdir}/HTML/*/krdc
-#### Telepathy-Qt4-based optional feature ####
-%{_bindir}/krdc_rfb_approver
-%{_datadir}/apps/krdc_rfb_approver
-%{_datadir}/dbus-1/services/org.freedesktop.Telepathy.Client.krdc_rfb*.service
-%{_datadir}/telepathy/clients/krdc_rfb*.client
 
 #----------------------------------------------------------------------------
 
-%define krdccore_major 4
+%define krdccore_major 5
 %define libkrdccore %mklibname krdccore %{krdccore_major}
 
 %package -n %{libkrdccore}
@@ -67,6 +55,7 @@ Shared library for KRDC.
 
 %files -n %{libkrdccore}
 %{_libdir}/libkrdccore.so.%{krdccore_major}*
+%{_libdir}/libkrdccore.so.%{version}
 
 #----------------------------------------------------------------------------
 
@@ -84,6 +73,7 @@ This package contains header files needed if you want to build applications
 based on KRDC.
 
 %files -n %{devkrdccore}
+%{_includedir}/krdccore_export.h
 %{_includedir}/krdc
 %{_libdir}/libkrdccore.so
 

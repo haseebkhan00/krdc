@@ -1,6 +1,6 @@
-diff -urN krdc-4.11.0/krdc.desktop krdc-4.11.0-patched/krdc.desktop
---- krdc-4.11.0/krdc.desktop	2013-08-06 23:50:49.000000000 +1100
-+++ krdc-4.11.0-patched/krdc.desktop	2013-08-19 21:39:48.435865904 +1100
+diff -urN krdc-4.11.0/org.kde.krdc.desktop krdc-4.11.0-patched/org.kde.krdc.desktop
+--- krdc-4.11.0/org.kde.krdc.desktop	2013-08-06 23:50:49.000000000 +1100
++++ krdc-4.11.0-patched/org.kde.krdc.desktop	2013-08-19 21:39:48.435865904 +1100
 @@ -121,4 +121,4 @@
  GenericName[zh_CN]=远程桌面客户端
  GenericName[zh_TW]=遠端桌面客戶端
