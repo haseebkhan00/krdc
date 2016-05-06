@@ -14,9 +14,25 @@ Url:		http://www.kde.org
 %endif
 Source0:	http://download.kde.org/%{ftpdir}/applications/%{version}/src/%{name}-%{version}.tar.xz
 Patch0:		krdc-4.11.0-desktop.patch
-BuildRequires:	kdelibs-devel
 BuildRequires:	pkgconfig(libvncserver)
 BuildRequires:	pkgconfig(TelepathyQt4)
+BuildRequires:	cmake(ECM)
+BuildRequires:	cmake(KF5Config)
+BuildRequires:	cmake(KF5KCMUtils)
+BuildRequires:	cmake(KF5DNSSD)
+BuildRequires:	cmake(KF5NotifyConfig)
+BuildRequires:	cmake(KF5Notifications)
+BuildRequires:	cmake(KF5Bookmarks)
+BuildRequires:	cmake(KF5IconThemes)
+BuildRequires:	cmake(KF5XmlGui)
+BuildRequires:	cmake(KF5Completion)
+BuildRequires:	cmake(KF5Wallet)
+BuildRequires:	cmake(KF5WidgetsAddons)
+BuildRequires:	cmake(KF5NotifyConfig)
+BuildRequires:	cmake(KF5I18n)
+BuildRequires:	cmake(Qt5Core)
+BuildRequires:	cmake(Qt5Gui)
+BuildRequires:	cmake(Qt5Widgets)
 BuildRequires:	freerdp >= 1.0.2
 Requires:	freerdp >= 1.0.2
 Conflicts:	kde4-filesharing < 3:4.8.0
