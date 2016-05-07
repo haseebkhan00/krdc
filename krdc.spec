@@ -99,10 +99,10 @@ based on KRDC.
 %setup -q
 %patch0 -p1
 
+%cmake_kde5
+
 %build
-%cmake_kde4 \
-	-DCMAKE_MINIMUM_REQUIRED_VERSION=3.1
-%make
+%ninja -C build
 
 %install
-%makeinstall_std -C build
+%ninja_install -C build
