@@ -17,6 +17,7 @@ Patch0:		krdc-4.11.0-desktop.patch
 BuildRequires:	pkgconfig(libvncserver)
 BuildRequires:	pkgconfig(TelepathyQt4)
 BuildRequires:	cmake(ECM)
+BuildRequires:	cmake(KF5DocTools)
 BuildRequires:	cmake(KF5Config)
 BuildRequires:	cmake(KF5KCMUtils)
 BuildRequires:	cmake(KF5DNSSD)
@@ -43,7 +44,12 @@ or even control the desktop session on another machine that is running a
 compatible server. VNC and RDP are supported.
 
 %files
+%dir %{_libdir}/qt5/plugins/krdc
+%dir %{_libdir}/qt5/plugins/krdc/kcms
+%dir %{_datadir}/kxmlgui5/krdc
 %{_bindir}/krdc
+%{_libdir}/qt5/plugins/krdc/kcms/*.so
+%{_libdir}/qt5/plugins/krdc/*.so
 %{_datadir}/applications/org.kde.krdc.desktop
 %{_datadir}/config.kcfg/krdc.kcfg
 %{_datadir}/krdc
@@ -52,7 +58,6 @@ compatible server. VNC and RDP are supported.
 %{_datadir}/kservices5/krdc_vnc_config.desktop
 %{_datadir}/kservices5/rdp.protocol
 %{_datadir}/kservices5/vnc.protocol
-%{_libdir}/plugins/krdc
 %{_datadir}/kxmlgui5/krdc/krdcui.rc
 %doc %{_docdir}/HTML/*/krdc
 
