@@ -1,6 +1,6 @@
 Summary:	KDE Remote Desktop Client
 Name:		krdc
-Version:	16.12.2
+Version:	17.04.0
 Release:	1
 Epoch:		3
 License:	GPLv2+
@@ -43,7 +43,7 @@ KDE Remote Desktop Client is a client application that allows you to view
 or even control the desktop session on another machine that is running a
 compatible server. VNC and RDP are supported.
 
-%files
+%files -f %{name}.lang
 %dir %{_libdir}/qt5/plugins/krdc
 %dir %{_libdir}/qt5/plugins/krdc/kcms
 %dir %{_datadir}/kxmlgui5/krdc
@@ -59,7 +59,6 @@ compatible server. VNC and RDP are supported.
 %{_datadir}/kservices5/rdp.protocol
 %{_datadir}/kservices5/vnc.protocol
 %{_datadir}/kxmlgui5/krdc/krdcui.rc
-%doc %{_docdir}/HTML/*/krdc
 
 #----------------------------------------------------------------------------
 
@@ -111,3 +110,4 @@ based on KRDC.
 
 %install
 %ninja_install -C build
+%find_lang %{name} --with-html
