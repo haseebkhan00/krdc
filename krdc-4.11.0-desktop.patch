@@ -1,9 +1,8 @@
-diff -urN krdc-4.11.0/org.kde.krdc.desktop krdc-4.11.0-patched/org.kde.krdc.desktop
---- krdc-4.11.0/org.kde.krdc.desktop	2013-08-06 23:50:49.000000000 +1100
-+++ krdc-4.11.0-patched/org.kde.krdc.desktop	2013-08-19 21:39:48.435865904 +1100
-@@ -121,4 +121,4 @@
- GenericName[zh_CN]=远程桌面客户端
- GenericName[zh_TW]=遠端桌面客戶端
+--- krdc-17.08.1/org.kde.krdc.desktop.orig	2017-09-07 13:40:57.913392787 +0200
++++ krdc-17.08.1/org.kde.krdc.desktop	2017-09-07 14:38:48.243675582 +0200
+@@ -136,4 +136,4 @@ Comment[sv]=Anslut till en annan dator m
+ Comment[uk]=Керування іншим комп'ютером за допомогою RDP або VNC
+ Comment[x-test]=xxComment with RDP or VNC to another computerxx
  X-DocPath=krdc/index.html
 -Categories=Qt;KDE;Network;RemoteAccess;
 +Categories=Qt;KDE;System;RemoteAccess;
