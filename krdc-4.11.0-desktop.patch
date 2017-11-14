@@ -1,8 +1,0 @@
---- krdc-17.08.1/org.kde.krdc.desktop.orig	2017-09-07 13:40:57.913392787 +0200
-+++ krdc-17.08.1/org.kde.krdc.desktop	2017-09-07 14:38:48.243675582 +0200
-@@ -136,4 +136,4 @@ Comment[sv]=Anslut till en annan dator m
- Comment[uk]=Керування іншим комп'ютером за допомогою RDP або VNC
- Comment[x-test]=xxComment with RDP or VNC to another computerxx
- X-DocPath=krdc/index.html
--Categories=Qt;KDE;Network;RemoteAccess;
-+Categories=Qt;KDE;System;RemoteAccess;

@@ -1,6 +1,6 @@
 Summary:	KDE Remote Desktop Client
 Name:		krdc
-Version:	17.08.1
+Version:	17.08.3
 Release:	1
 Epoch:		3
 License:	GPLv2+
@@ -13,7 +13,6 @@ Url:		http://www.kde.org
 %define ftpdir stable
 %endif
 Source0:	http://download.kde.org/%{ftpdir}/applications/%{version}/src/%{name}-%{version}.tar.xz
-Patch0:		krdc-4.11.0-desktop.patch
 BuildRequires:	pkgconfig(libvncserver)
 BuildRequires:	pkgconfig(TelepathyQt4)
 BuildRequires:	cmake(ECM)
