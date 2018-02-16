@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   krdc-17.12.1.tar.xz: e476cc165a4aba614b31e3446c43a6dfb4ed3061
+sources:
+  krdc-17.12.2.tar.xz: a4f487908e6623c3cfa49c4d861068a66a103189
