@@ -1,6 +1,6 @@
 Summary:	KDE Remote Desktop Client
 Name:		krdc
-Version:	 17.12.2
+Version:	 18.04.2
 Release:	1
 Epoch:		3
 License:	GPLv2+
@@ -14,7 +14,6 @@ Url:		http://www.kde.org
 %endif
 Source0:	http://download.kde.org/%{ftpdir}/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	pkgconfig(libvncserver)
-BuildRequires:	pkgconfig(TelepathyQt4)
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF5DocTools)
 BuildRequires:	cmake(KF5Config)
@@ -100,8 +99,6 @@ based on KRDC.
 
 %prep
 %setup -q
-%patch0 -p1
-
 %cmake_kde5
 
 %build
