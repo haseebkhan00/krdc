@@ -32,6 +32,8 @@ BuildRequires:	cmake(KF5I18n)
 BuildRequires:	cmake(Qt5Core)
 BuildRequires:	cmake(Qt5Gui)
 BuildRequires:	cmake(Qt5Widgets)
+BuildRequires:	cmake(KF5Parts)
+
 BuildRequires:	freerdp >= 1.0.2
 Requires:	freerdp >= 1.0.2
 Conflicts:	kde4-filesharing < 3:4.8.0
@@ -57,6 +59,7 @@ compatible server. VNC and RDP are supported.
 %{_datadir}/kservices5/rdp.protocol
 %{_datadir}/kservices5/vnc.protocol
 %{_datadir}/kxmlgui5/krdc/krdcui.rc
+%{_datadir}/metainfo/org.kde.krdc.appdata.xml
 
 #----------------------------------------------------------------------------
 
