@@ -33,7 +33,7 @@ BuildRequires:	cmake(Qt5Core)
 BuildRequires:	cmake(Qt5Gui)
 BuildRequires:	cmake(Qt5Widgets)
 BuildRequires:	cmake(KF5Parts)
-
+BuildRequires:	cmake(KF5WindowSystem)
 BuildRequires:	freerdp >= 1.0.2
 Requires:	freerdp >= 1.0.2
 Conflicts:	kde4-filesharing < 3:4.8.0
@@ -101,7 +101,7 @@ based on KRDC.
 #----------------------------------------------------------------------------
 
 %prep
-%setup -q
+%autosetup -p1
 %cmake_kde5
 
 %build
