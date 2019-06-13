@@ -1,7 +1,7 @@
 Summary:	KDE Remote Desktop Client
 Name:		krdc
 Version:	 19.04.2
-Release:	1
+Release:	2
 Epoch:		3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -13,6 +13,7 @@ Url:		http://www.kde.org
 %define ftpdir stable
 %endif
 Source0:	http://download.kde.org/%{ftpdir}/applications/%{version}/src/%{name}-%{version}.tar.xz
+Patch0:		krdc-19.04.2-menuentry.patch
 BuildRequires:	pkgconfig(libvncserver)
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF5DocTools)
