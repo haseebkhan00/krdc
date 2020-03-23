@@ -1,6 +1,6 @@
 Summary:	KDE Remote Desktop Client
 Name:		krdc
-Version:	19.12.3
+Version:	20.03.80
 Release:	1
 Epoch:		3
 License:	GPLv2+
