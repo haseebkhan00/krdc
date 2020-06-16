@@ -1,7 +1,7 @@
 Summary:	KDE Remote Desktop Client
 Name:		krdc
 Version:	20.04.2
-Release:	1
+Release:	2
 Epoch:		3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -35,6 +35,7 @@ BuildRequires:	cmake(Qt5Gui)
 BuildRequires:	cmake(Qt5Widgets)
 BuildRequires:	cmake(KF5Parts)
 BuildRequires:	cmake(KF5WindowSystem)
+BuildRequires:	pkgconfig(libssh)
 BuildRequires:	freerdp >= 1.0.2
 Requires:	freerdp >= 1.0.2
 Conflicts:	kde4-filesharing < 3:4.8.0
