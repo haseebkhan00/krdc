@@ -1,6 +1,6 @@
 Summary:	KDE Remote Desktop Client
 Name:		krdc
-Version:	20.04.3
+Version:	20.07.80
 Release:	1
 Epoch:		3
 License:	GPLv2+
@@ -54,7 +54,6 @@ compatible server. VNC and RDP are supported.
 %{_libdir}/qt5/plugins/krdc/*.so
 %{_datadir}/applications/org.kde.krdc.desktop
 %{_datadir}/config.kcfg/krdc.kcfg
-%{_datadir}/krdc
 %{_datadir}/kservices5/ServiceMenus/smb2rdc.desktop
 %{_datadir}/kservices5/krdc_rdp_config.desktop
 %{_datadir}/kservices5/krdc_vnc_config.desktop
