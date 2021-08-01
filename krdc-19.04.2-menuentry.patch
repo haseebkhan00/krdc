@@ -1,6 +1,6 @@
-diff -up krdc-19.04.2/org.kde.krdc.desktop.omv~ krdc-19.04.2/org.kde.krdc.desktop
---- krdc-19.04.2/org.kde.krdc.desktop.omv~	2019-06-13 21:18:30.442019429 +0200
-+++ krdc-19.04.2/org.kde.krdc.desktop	2019-06-13 21:20:01.504020355 +0200
+diff -up krdc-21.07.90/org.kde.krdc.desktop.1~ krdc-21.07.90/org.kde.krdc.desktop
+--- krdc-21.07.90/org.kde.krdc.desktop.1~	2021-07-27 21:49:29.000000000 +0200
++++ krdc-21.07.90/org.kde.krdc.desktop	2021-08-01 17:18:31.129162145 +0200
 @@ -4,65 +4,63 @@ Type=Application
  Exec=krdc -qwindowtitle %c %u
  Icon=krdc
@@ -124,9 +124,9 @@ diff -up krdc-19.04.2/org.kde.krdc.desktop.omv~ krdc-19.04.2/org.kde.krdc.deskto
  GenericName=Remote Desktop Client
  GenericName[ar]=عميل سطح المكتب البعيد
  GenericName[bg]=Отдалечен работен плот
-@@ -155,4 +153,4 @@ Comment[zh_CN]=通过 RDP 或 VNC 连接
- Comment[zh_TW]=以 RDP 或 VNC 連線到其他電腦
+@@ -159,4 +157,4 @@ Comment[zh_TW]=以 RDP 或 VNC 連線到
  X-DocPath=krdc/index.html
  StartupWMClass=krdc
+ MimeType=x-scheme-handler/vnc;x-scheme-handler/rdp
 -Categories=Qt;KDE;Network;RemoteAccess;
 +Categories=Qt;KDE;Network;RemoteAccess;X-KDE-More;

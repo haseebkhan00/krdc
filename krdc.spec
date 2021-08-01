@@ -1,6 +1,6 @@
 Summary:	KDE Remote Desktop Client
 Name:		krdc
-Version:	21.04.2
+Version:	21.07.90
 Release:	1
 Epoch:		3
 License:	GPLv2+
@@ -48,7 +48,6 @@ compatible server. VNC and RDP are supported.
 %files -f %{name}.lang
 %dir %{_libdir}/qt5/plugins/krdc
 %dir %{_libdir}/qt5/plugins/krdc/kcms
-%dir %{_datadir}/kxmlgui5/krdc
 %{_bindir}/krdc
 %{_libdir}/qt5/plugins/krdc/kcms/*.so
 %{_libdir}/qt5/plugins/krdc/*.so
@@ -57,10 +56,9 @@ compatible server. VNC and RDP are supported.
 %{_datadir}/kservices5/ServiceMenus/smb2rdc.desktop
 %{_datadir}/kservices5/krdc_rdp_config.desktop
 %{_datadir}/kservices5/krdc_vnc_config.desktop
-%{_datadir}/kservices5/rdp.protocol
-%{_datadir}/kservices5/vnc.protocol
-%{_datadir}/kxmlgui5/krdc/krdcui.rc
 %{_datadir}/metainfo/org.kde.krdc.appdata.xml
+%{_datadir}/kservicetypes5/krdc_plugin.desktop
+%{_datadir}/qlogging-categories5/krdc.categories
 
 #----------------------------------------------------------------------------
 
